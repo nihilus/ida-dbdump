@@ -11,20 +11,21 @@
 #include <string>
 #include <vector>
 
-#include "boost/format.hpp"
+#include <boost/format.hpp>
 
 #ifdef _WIN32
 #include <windows.h>
 #include <tlhelp32.h>
 #endif
 
-#include "pro.h"     // for basic types.
 #include "ida.hpp"   // for ida constants and types.
+#include "pro.h"     // for basic types.
 #include "idp.hpp"   // for interface version
 #include "netnode.hpp"  // for RootNode
 
 #include "expr.hpp"  // for IDCFuncs
 
+#include <stdint.h>
 
 typedef std::vector<char> CharVector;
 #define vectorptr(v)  (&(v)[0])
